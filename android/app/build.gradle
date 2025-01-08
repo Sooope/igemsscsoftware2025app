@@ -30,21 +30,11 @@ android {
         versionName = flutter.versionName
     }
 
-    signingConfigs {
-        release {
-            storeFile file('/home/Sooope/Documents/important/androidigemtflitekey.jks')
-            storePassword "123456"
-            keyAlias "key0"
-            keyPassword "123456"
-        }
-    }
-
-
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.release
+            signingConfig = signingConfigs.debug
             
             // minifyEnabled = true
             // useProguard = true
